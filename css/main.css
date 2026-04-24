@@ -1,0 +1,159 @@
+/* =========================
+   BASE
+========================= */
+body {
+    background-color: #fef0dc;
+    color: #516e53;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family:'Poppins';
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.custom-navbar {
+    background: transparent;
+    padding: 20px 60px;
+}
+
+.navbar-brand {
+    font-weight: 800;
+}
+
+.nav-link {
+    color: #516e53 !important;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: opacity 0.3s ease;
+}
+
+.nav-link:hover {
+    opacity: 0.6;
+}
+
+/* =========================
+   HERO (PORTADA)
+========================= */
+.portada {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+    line-height: 1.1;
+}
+
+.hero-content p {
+    margin-top: 20px;
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+/* BOTONES HERO */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+/* BOTÓN PRINCIPAL */
+.btn-custom {
+    background-color: #516e53;
+    color: #fef0dc;
+    border-radius: 30px;
+    padding: 10px 25px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: transparent;
+    border: 1px solid #516e53;
+    color: #516e53;
+}
+
+/* BOTÓN SECUNDARIO */
+.btn-outline-custom {
+    border: 1px solid #516e53;
+    color: #516e53;
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+    background-color: #516e53;
+    color: #fef0dc;
+}
+
+/* =========================
+   SECCIONES
+========================= */
+.main,
+.projects,
+.contact {
+    padding: 120px 60px;
+}
+
+/* =========================
+   CARDS
+========================= */
+.card {
+    background-color: transparent;
+    color: #516e53;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background-color: #516e53;
+    color: #f4f4f4;
+    padding: 60px 20px;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-icons a {
+    color: #f4f4f4;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-icons a:hover {
+    transform: translateY(-5px);
+    opacity: 0.8;
+}
+
+.footer-icons svg {
+    width: 24px;
+    height: 24px;
+}
