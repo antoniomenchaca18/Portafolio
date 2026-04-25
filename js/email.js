@@ -1,16 +1,9 @@
-//Copiar Link en HTML
-       //<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-       
+        const serviceID = 'service_zq8ppc8'; 
+        const templateID = 'template_q3dg4al';
+        const userID = 'NP5JEND4fJn0r72uk';
 
-       // Aquí van tus configuraciones personalizadas
-        const serviceID = 'service_zq8ppc8';  // Reemplaza con tu ID de servicio
-        const templateID = 'template_q3dg4al';  // Reemplaza con tu ID de plantilla
-        const userID = 'NP5JEND4fJn0r72uk';  // Reemplaza con tu llave pública de EmailJS
-
-        // Inicializar EmailJS
         emailjs.init(userID);
 
-        // Obtener Datos del Formulario
         document.getElementById('form-contact').addEventListener('submit', function(event) {
             event.preventDefault();
 
@@ -21,12 +14,11 @@
                 message: formData.get('message')
             };
 
-             // Función Enviar Email
             emailjs.send(serviceID, templateID, data)
                 .then(function(response) {
                     alert('¡Mensaje enviado con éxito!');
                 }, function(error) {
                     alert('Hubo un error al enviar el mensaje. Inténtalo de nuevo más tarde.');
-                    //alert('Codigo de Error: '+ error.status + '  Mensaje: ' + error.text);
                 });
         });
+        
